@@ -1,6 +1,4 @@
 
-
-
 .skillBox{
   width: 50%;
 }
@@ -54,4 +52,8 @@
   }
  }
  
-@media all and (max-width: 480px) { }
+@media all and (max-width: 430px) {
+  .tickIcon{
+    display: none;
+  }
+ }
