@@ -23,11 +23,11 @@ export const Education = ({education} : props) => {
     <Container id="education" className='d-flex justify-content-center align-items-center p-5' >
     <div className='d-flex flex-column justify-content-center align-items-center gap-5' style={{width : "100%"}}>
       <span className='h1' style={{color:"rgba(77,181,255,0.4)", opacity: education === true ? "1" : "0",transition : "0.6s"}}>Education</span>
-      <div className={`${education && widthSize > 930 ? "educationList" : ""} d-flex gap-3`} style={{width : "100%",transition:"0.6s"}}>
-          <ul className='mt-5 d-flex flex-column justify-content-center align-items-center gap-5 position-relative' style={{width : "100%",listStyle : "none",paddingLeft:"0px"}}>
+      <div className="educationList d-flex gap-3 w-100" style={{transition:"0.6s"}}>
+          <ul className='mt-5 d-flex flex-column justify-content-center align-items-center gap-5 position-relative w-100' style={{listStyle : "none",paddingLeft:"0px"}}>
             <li>
-              <div className={`${widthSize < 930 ? "" : "box1"} d-flex flex-column justify-content-center align-items-center p-3 gap-2`}
-               style={{transform : education ? widthSize > 930 ?"translate(-180px)" :"translate(0px)" : "translate(-2000px)",backgroundColor:"#2c2c6c",transition : "0.6s",border : "solid 3px #4db5ff",borderRadius:"10px"}}>
+              <div className="box1 d-flex flex-column justify-content-center align-items-center p-3 gap-2"
+               style={{transform : education ? "translate(-180px)" : "translate(-2000px)",backgroundColor:"#2c2c6c",transition : "0.6s",border : "solid 3px #4db5ff",borderRadius:"10px"}}>
                 <span className=''>2010 - 2013</span>
                 <span className=''>University of Nagpur</span>
                 <span>Hislop College, Nagpur, India</span>
@@ -35,7 +35,7 @@ export const Education = ({education} : props) => {
               </div>
             </li>
             <li >
-            <div className={`${widthSize < 930 ? "" : "box2"} d-flex flex-column justify-content-center align-items-center p-3 gap-2`} style={{transform : education === true ? widthSize > 930 ?"translate(179px)": "translate(0px)": "translate(2000px)",width : "100%",backgroundColor:"#2c2c6c",transition : "0.6s",border : "solid 3px #4db5ff",borderRadius:"10px"}}>
+            <div className="box2 d-flex flex-column justify-content-center align-items-center p-3 gap-2" style={{transform : education ? "translate(179px)": "translate(2000px)",width : "100%",backgroundColor:"#2c2c6c",transition : "0.6s",border : "solid 3px #4db5ff",borderRadius:"10px"}}>
               
                 <span className=''>3/2022 - 9/2022</span>
                 <span className=''>Developers Institute</span>

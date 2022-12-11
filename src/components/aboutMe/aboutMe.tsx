@@ -10,7 +10,7 @@ type props = {
 
 export const AboutMe = ({aboutMe} : props) => {
   const [widthSize,setWidthSize] = useState<number>(0)
-
+  console.log(widthSize)
   const resize = () => {
     window.addEventListener("resize",() => {
       setWidthSize(window.innerWidth)
@@ -19,21 +19,21 @@ export const AboutMe = ({aboutMe} : props) => {
 
   useEffect(() => {
    resize()
-  },[])
+  },[widthSize])
   
   return (
-    <Container className='d-flex justify-content-center align-items-center p-5' style={aboutContainer}>
+    <Container className='d-flex justify-content-center align-items-center p-5 m-0 p-0' style={aboutContainer}>
       <div className='d-flex flex-column justify-content-center align-items-center gap-5'>
         <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity: aboutMe === false ? "0": "1",transition : "0.6s"}}>About Me</span>
 
-        <div className={`d-flex gap-3 ${widthSize > 950 ? "" : "flex-column justify-content-center align-items-center"}`} style={{width : "100%"}}>
-        <div style={{transform: aboutMe === false ? "translate(-1000px)" : "translate(0px)",transition : "0.6s",width : widthSize > 950 ? "50%" : "100%"}}>
-          <span className={`fs-${widthSize > 950 ? "5" : "6"} lh-base`} style={{color:"rgba(255,255,255,0.6)"}}>
+        <div className='d-flex gap-3' style={{width : "100%"}}>
+        <div style={{transform: aboutMe === false ? "translate(-1000px)" : "translate(0px)",transition : "0.6s",width :  "50%"}}>
+          <span className='fs-5 lh-base' style={{color:"rgba(255,255,255,0.6)"}}>
         My journey of becoming a web developer started during the lockdown when a thought came in my mind to start coding. So I started coding without any training. In the start it was quite easy to type Hello World. Slowely as I kept on learning it became so difficult which I never thought of. But I was eager to learn more about it, then decided to do a course in Full Stack Development. Coding excites me because in every project there is something new to learn and I am a kind of a person who likes to keep on experimenting and learn new things.
         </span>
         </div>
 
-        <div className='d-flex gap-2 justify-content-center align-items-center' style={{transform: aboutMe === false ? "translate(1000px)" : "translate(0px)",transition : "0.6s",width:widthSize > 950 ? "50%" : "100%"}}>
+        <div className='d-flex gap-2 justify-content-center align-items-center' style={{transform: aboutMe === false ? "translate(1000px)" : "translate(0px)",transition : "0.6s",width: "50%"}}>
             <div style={aboutMeDiv}>
                 <span className='h5'>Experience</span>
                 <span style={{color:"rgba(255,255,255,0.6)"}}>3+ years working</span>

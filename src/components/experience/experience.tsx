@@ -52,8 +52,8 @@ export const Experience = ({experience} : props) => {
           <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity: experience === false ? "0" : "1",transition : "0.6s"}}>
             Experience
           </span>
-          <div className={`d-flex ${widthSize > 770 ? "" : "flex-column justify-content-center align-items-center"}`} style={{width : "100%"}}>
-            <div className='d-flex justify-content-center align-items-center gap-3' style={{width : widthSize > 770 ? "50%" : "100%",transform : experience ===true ?"translate(0px)" : "translate(-1000px)",transition :"0.6s"}}>
+          <div className='d-flex w-100'>
+            <div className='d-flex justify-content-center align-items-center gap-3 w-50' style={{transform : experience ===true ?"translate(0px)" : "translate(-1000px)",transition :"0.6s"}}>
                   <div className='d-flex flex-column justify-content-center align-items-center gap-3' style={{width : "200px",height : "200px",backgroundColor:"#2c2c6c",borderRadius:"10px"}}>
                       <MdBusinessCenter style={{color : "#4db5ff"}} size={40}/>
                         <span className='h5 text-center'>
@@ -69,7 +69,7 @@ export const Experience = ({experience} : props) => {
                         <span className='mt-2'>2017 - 2020</span>
                   </div>
             </div>
-            <div className='d-flex justify-content-center align-items-center gap-3 flex-column' style={{width : widthSize > 770 ? "50%" : "100%"}}>
+            <div className='d-flex justify-content-center align-items-center gap-3 flex-column' style={{width : "50%"}}>
                        
                        {responsibilities()}
                        

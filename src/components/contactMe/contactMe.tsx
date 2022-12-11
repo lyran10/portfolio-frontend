@@ -67,19 +67,19 @@ const handleClick = async() => {
 }
 
   return (
-    <Container id="contact" className='d-flex justify-content-center align-items-center p-5' style={{width : "100%",maxWidth : "100%",margin : "0px 0px",padding :"0px 0px"}}>
-      <div className={`d-flex flex-column justify-content-center align-items-center gap-5`} style={{width : "100%"}}>
+    <Container id="contact" className='d-flex justify-content-center align-items-center p-5 w-100' style={{maxWidth : "100%",margin : "0px 0px",padding :"0px 0px"}}>
+      <div className='d-flex flex-column justify-content-center align-items-center gap-5 w-100'>
         <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity:"1",transition : "0.6s"}}>Contact me</span>
 
-        <div className={`d-flex gap-3 ${widthSize < 930 ? "flex-column align-items-center" : ""} `} style={{width : "100%"}}>
+        <div className='d-flex gap-3 w-100'>
 
         <div className='d-flex justify-content-center align-items-center' style={{transition : "0.6s",width : "40%"}}>
           <div className='d-flex gap-3 flex-column justify-content-center align-items-center' style={{width : "100%"}}>
           <Image style={{width : "20rem",borderRadius:"10px"}} src={photo} fluid/>
           <div className='d-flex flex-column justify-content-center align-items-center'>
-          <span className={`fs-${widthSize < 930 ? "6" : "5"} fw-bolder text-white text-center`}>Email - liranramekar7@gmail.com</span>
+          <span className='fs-5 fw-bolder text-white text-center'>Email - liranramekar7@gmail.com</span>
 
-          <span className={`fs-${widthSize < 930 ? "6" : "5"} fw-bolder text-white text-center`}>Contact number - 0536652453</span>
+          <span className='fs-5 fw-bolder text-white text-center'>Contact number - 0536652453</span>
           </div>
           <div className='d-flex gap-3'>
                 <div style={contactDetailStyles}>

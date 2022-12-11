@@ -1,8 +1,10 @@
 import React,{useEffect, useState} from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row,Col } from 'react-bootstrap'
 import {mySkillsDivStyle} from "./mySkillsStyles"
-import {BsFillPatchCheckFill} from "react-icons/bs"
+import {BsColumns, BsFillPatchCheckFill} from "react-icons/bs"
 import {AiFillDownCircle} from "react-icons/ai"
+import {FaDatabase,FaLaptopCode} from "react-icons/fa"
+import "../mySkills/myskills.css"
 
 type props = {
   mySkills : boolean
@@ -10,7 +12,7 @@ type props = {
 
 export const MySkills = ({mySkills} : props) => {
 
-  const skillSet = ["HTML","CSS","JavaScript","React","React-Redux","React-TypeScript","Bootstrap","Tailwind","NodeJs","Python","MongoDB","Postgresql","Docker","Work With API's","Knex"]
+  const skillSet = ["HTML","CSS","JavaScript","React","Redux","TypeScript","Bootstrap","Tailwind","NodeJs","Python","MongoDB","Postgresql","Docker","API's","Knex"]
 
   const [widthSize,setWidthSize] = useState<number>(0)
 
@@ -30,10 +32,11 @@ export const MySkills = ({mySkills} : props) => {
             return(
               skill.slice(start,end).map((ele) => {
                   return(
-                    <div className='d-flex gap-2'>
+                    <span className='col-md-3 fs-6 d-flex gap-2 w-100' style={{color:"rgba(255,255,255,0.6)"}}>
                     <BsFillPatchCheckFill style={{color : "#4db5ff"}} className='mt-1' />
-                    <span className='fs-6' style={{color:"rgba(255,255,255,0.6)"}}>{ele}</span>
-                </div>
+                      {ele}
+                      </span>
+
                   )
               })
             )  
@@ -44,35 +47,39 @@ export const MySkills = ({mySkills} : props) => {
      <div className='d-flex align-items-center flex-column gap-5' style={{transition:"0.6s",width : "100%",}}>
 
       <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity:mySkills === true ? "1" : "0",transition : "0.6s"}}>My Skills</span>
-
-        <div className={`d-flex gap-5 ${widthSize > 930 ? "" : "flex-column justify-content-center align-items-center"} `} style={{width : "100%"}}>
-        <div className='d-flex text-center flex-column gap-3' style={{width : "100%",transform : mySkills === true ? "translate(0px)" : "translate(-1000px)",transition : "0.6s"}}>
+        <div className='skillsDiv d-flex flex-column gap-5 justify-content-center align-items-center w-100'>
+        <div className='skillBox d-flex text-center flex-column gap-3' style={{transform : mySkills === true ? "translate(0px)" : "translate(-1000px)",transition : "0.6s"}}>
           <span className='fs-4 text-white'>Frontend Development</span>
       <div style={mySkillsDivStyle}>
-    <div className={`d-flex  ${widthSize > 510 ? "" : "flex-column gap-3"}`} style={{width : "100%"}}>
-    <div className={`d-flex flex-column gap-3 ${widthSize > 510 ? "" : "justify-content-start m-auto"}`} style={{width : widthSize > 510 ? "50%" : "60%"}}>
+    <div className='skillDiv d-flex gap-5 justify-content-center align-items-center w-100'>
+    <FaLaptopCode size={150} />
+    <div className='skillList gap-3 d-flex w-100'>
+    <div className='row d-flex flex-column gap-3 w-100'>
           {skills(skillSet,0,4)}
     </div>
-
-      <div className={`d-flex flex-column gap-3 ${widthSize > 510 ? "" : "justify-content-start m-auto"}`} style={{width : widthSize > 510 ? "50%" : "60%"}}>
+      <div className='row d-flex flex-column gap-3 w-100'>
         {skills(skillSet,4,8)}
-  </div>
+    </div>
+    </div>
       </div>
 
         </div>
         </div>
 
 
-        <div className={`d-flex gap-3 text-center flex-column ${widthSize > 930 ? "" : "flex-column justify-content-center align-items-center"}`} style={{width : "100%",transform : mySkills === true ? "translate(0px)" : "translate(1000px)",transition : "0.6s"}}>
+        <div className='skillBox d-flex gap-3 text-center flex-column' style={{transform : mySkills === true ? "translate(0px)" : "translate(1000px)",transition : "0.6s"}}>
           <span className='fs-4 text-white'>backend development</span>
         <div style={mySkillsDivStyle}>
-                <div className={`d-flex ${widthSize > 510 ? "" : "flex-column gap-3"}`} style={{width : "100%"}}>
-                  <div className={`d-flex flex-column gap-3 ${widthSize > 510 ? "" : "justify-content-start m-auto"}`} style={{width :widthSize? "50%" : "60%"}}>
+                <div className='skillDiv d-flex justify-content-center align-items-center gap-5 w-100'>
+                  <FaDatabase size={150}/>
+                  <div className='skillList gap-3 d-flex w-100'>
+                  <div className='row d-flex flex-column gap-3 w-100'>
                     {skills(skillSet,8,12)}
                 </div>
 
-                <div className={`d-flex flex-column gap-3 ${widthSize > 510 ? "" : "justify-content-start m-auto"}`} style={{width : widthSize ? "50%" : "60%"}}>
+                <div className='row d-flex flex-column gap-3 w-100'>
                       {skills(skillSet,12,15)}
+               </div>
                </div>
         </div>
       </div>

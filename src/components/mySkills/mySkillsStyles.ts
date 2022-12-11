@@ -1,5 +1,5 @@
 export const mySkillsDivStyle : React.CSSProperties = {
-  padding : "50px",
+  padding : "20px",
     width : "100%",
     height : "",
     display : "flex",
@@ -10,3 +10,4 @@ export const mySkillsDivStyle : React.CSSProperties = {
     backgroundColor : "#2c2c6c",
     borderRadius : "10px"
 }
+

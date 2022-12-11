@@ -1,5 +1,8 @@
 export const aboutContainer = {
   width : "100%",
+  maxWidth : "100%",
+  padding : "0px 0px",
+  margin : "0px 0px"
 }
 
 export const aboutMeDiv : React.CSSProperties = {
