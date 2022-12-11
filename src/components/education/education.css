@@ -38,3 +38,73 @@
   left : -37px;
  background-color:#4db5ff ;
 }
+
+.moveIn{
+  transform: translate(179px);
+}
+
+.moveOut{
+  transform: translate(2000px);
+}
+
+.moveInBBA{
+  transform: translate(-180px);
+}
+
+.moveOutBBA{
+  transform: translate(-2000px);
+}
+
+
+/* media query */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (max-width: 900px){ 
+  .box1::before{
+    position: absolute;
+    content:"";
+    height : 50px;
+    width : 3px;
+    left : 50%;
+    top : 102%;
+   background-color:#4db5ff ;
+  }
+  
+  .box2::before{
+    position: static;
+    content:"";
+    height : 0px;
+    width : 0px;
+    left : 0px;
+   background-color:none ;
+  }
+
+  .educationList::before{
+    content : "";
+    position : static;
+    width : 0px;
+    height : 0%;
+    background-color: none;
+    left : 0;
+    transition: 0.6s;
+  }
+  .moveIn{
+    transform: translate(0px);
+  }
+
+  .moveInBBA{
+    transform: translate(0px);
+  }
+  
+}  
+
+
+@media all and (max-width: 768px) {
+
+ 
+ }
+ 
+@media all and (max-width: 430px) {
+  
+ }

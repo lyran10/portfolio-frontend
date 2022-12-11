@@ -5,6 +5,7 @@ import { contactDetailStyles,linkContact } from './contactstyle'
 import {FaWhatsapp,FaFacebookMessenger} from "react-icons/fa"
 import axios from 'axios'
 import { useEffect } from 'react'
+import "./contact.css"
 
 type info = {
   msg : string,
@@ -71,7 +72,7 @@ const handleClick = async() => {
       <div className='d-flex flex-column justify-content-center align-items-center gap-5 w-100'>
         <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity:"1",transition : "0.6s"}}>Contact me</span>
 
-        <div className='d-flex gap-3 w-100'>
+        <div className='contactDiv d-flex gap-3 w-100'>
 
         <div className='d-flex justify-content-center align-items-center' style={{transition : "0.6s",width : "40%"}}>
           <div className='d-flex gap-3 flex-column justify-content-center align-items-center' style={{width : "100%"}}>
