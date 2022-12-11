@@ -5,6 +5,7 @@ import {FaUserTie} from "react-icons/fa"
 import {BsFillPatchCheckFill} from "react-icons/bs"
 import {dataArray} from "./data"
 import {AiFillDownCircle} from "react-icons/ai"
+import "./experience.css"
 
 type props = {
   experience : boolean
