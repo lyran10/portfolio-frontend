@@ -32,7 +32,8 @@ export const Education = ({education} : props) => {
                 <span className=''>2010 - 2013</span>
                 <span className=''>University of Nagpur</span>
                 <span>Hislop College, Nagpur, India</span>
-                <span className=''>Bachelors of Business Administartion</span>
+                <span className=''>Bachelors of Business</span>
+                <span className=''>Administartion</span>
               </div>
             </li>
             <li >
@@ -41,7 +42,8 @@ export const Education = ({education} : props) => {
                 <span className=''>3/2022 - 9/2022</span>
                 <span className=''>Developers Institute</span>
                 <span>Tel Aviv</span>
-                <span className=''>Full Stack Development (JavaScript)</span>
+                <span className=''>Full Stack Development</span>
+                <span>JavaScript</span>
               </div>
 
             </li>

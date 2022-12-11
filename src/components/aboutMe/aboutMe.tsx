@@ -29,7 +29,7 @@ export const AboutMe = ({aboutMe} : props) => {
 
         <Container className='aboutMeDiv d-flex gap-3' style={{width : "100%"}}>
         <div className='para' style={{transform: aboutMe === false ? "translate(-1000px)" : "translate(0px)",transition : "0.6s"}}>
-          <span className='fs-5 lh-base' style={{color:"rgba(255,255,255,0.6)"}}>
+          <span className='fs-5 lh-base text-center' style={{color:"rgba(255,255,255,0.6)"}}>
         My journey of becoming a web developer started during the lockdown when a thought came in my mind to start coding. So I started coding without any training. In the start it was quite easy to type Hello World. Slowely as I kept on learning it became so difficult which I never thought of. But I was eager to learn more about it, then decided to do a course in Full Stack Development. Coding excites me because in every project there is something new to learn and I am a kind of a person who likes to keep on experimenting and learn new things.
         </span>
         </div>

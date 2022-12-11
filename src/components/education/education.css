@@ -40,7 +40,7 @@
 }
 
 .moveIn{
-  transform: translate(179px);
+  transform: translate(139px);
 }
 
 .moveOut{
@@ -48,7 +48,7 @@
 }
 
 .moveInBBA{
-  transform: translate(-180px);
+  transform: translate(-155px);
 }
 
 .moveOutBBA{

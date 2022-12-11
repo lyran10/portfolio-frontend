@@ -82,12 +82,12 @@ const handleClick = async() => {
 
           <span className='fs-5 fw-bolder text-white text-center'>Contact number - 0536652453</span>
           </div>
-          <div className='d-flex gap-3'>
-                <div style={contactDetailStyles}>
+          <div className='d-flex gap-3 w-100'>
+                <div className='w-50 m-auto' style={contactDetailStyles}>
                 <FaFacebookMessenger style={{color : "#4db5ff"}} size={25}/>
                 <span className='text-white'>Messenger</span>
                 <a target="_blank" className='text-decoration-none' href="http://m.me/liran.immanuel">
-                  <span className='text-white'>Send message</span>
+                  <span className='text-white text-center w-100'>Send message</span>
                 </a>
                 </div>
            </div>
