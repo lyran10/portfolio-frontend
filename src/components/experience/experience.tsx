@@ -30,7 +30,7 @@ export const Experience = ({experience} : props) => {
       data.map((ele :string) => {
         translate = translate + 1000
            return(
-              <div className='d-flex gap-2' style={{transform : experience === false ? `translate(${translate}px)` :`translate(0px)`,transition : "0.8s"}}>
+              <div className='d-flex gap-2 w-100' style={{transform : experience === false ? `translate(${translate}px)` :`translate(0px)`,transition : "0.8s"}}>
               <BsFillPatchCheckFill style={{color : "#4db5ff"}} className="mt-1"/>
               <span className='fs-6' style={{color:"rgba(255,255,255,0.6)"}}>{ele}</span>
               </div>
@@ -53,8 +53,8 @@ export const Experience = ({experience} : props) => {
           <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity: experience === false ? "0" : "1",transition : "0.6s"}}>
             Experience
           </span>
-          <div className='d-flex w-100'>
-            <div className='d-flex justify-content-center align-items-center gap-3 w-50' style={{transform : experience ===true ?"translate(0px)" : "translate(-1000px)",transition :"0.6s"}}>
+          <div className='expDiv d-flex w-100'>
+            <div className='expBoxes d-flex justify-content-center align-items-center gap-3 w-50' style={{transform : experience ===true ?"translate(0px)" : "translate(-1000px)",transition :"0.6s"}}>
                   <div className='d-flex flex-column justify-content-center align-items-center gap-3' style={{width : "200px",height : "200px",backgroundColor:"#2c2c6c",borderRadius:"10px"}}>
                       <MdBusinessCenter style={{color : "#4db5ff"}} size={40}/>
                         <span className='h5 text-center'>
@@ -70,7 +70,7 @@ export const Experience = ({experience} : props) => {
                         <span className='mt-2'>2017 - 2020</span>
                   </div>
             </div>
-            <div className='d-flex justify-content-center align-items-center gap-3 flex-column' style={{width : "50%"}}>
+            <div className='res d-flex justify-content-center align-items-center gap-3 flex-column'>
                        
                        {responsibilities()}
                        
