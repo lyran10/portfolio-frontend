@@ -14,8 +14,8 @@ export const NavBar = () => {
   }, [])
   
   return (
-    <Container style={{display:"flex",justifyContent:"end",alignItems:"center",maxWidth : "100%",margin :"0px 0px",padding : "0px 0px",position : "fixed",width : "100vw",height : "100vh",backgroundColor:"transparent",zIndex:99}}>
-      <Nav className='d-flex justify-content-center me-3 gap-3 align-items-center p-1 flex-column' style={{borderRadius : "10px",backgroundColor : "black"}}>
+    <Container style={{display:"flex",justifyContent:"end",alignItems:"center",maxWidth : "100%",margin :"0px 0px",padding : "0px 0px",position : "fixed",height : "100vh",backgroundColor:"transparent"}}>
+      <Nav className='d-flex justify-content-center me-1 gap-3 align-items-center p-1 flex-column' style={{borderRadius : "10px",backgroundColor : "black"}}>
         <Nav.Item>
           <Nav.Link className='text-white' href='#home'><AiFillHome size={25}/></Nav.Link>
         </Nav.Item>

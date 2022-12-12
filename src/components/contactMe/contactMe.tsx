@@ -94,7 +94,7 @@ const handleClick = async() => {
           </div>
         </div>
 
-        <div className='d-flex gap-5 justify-content-start align-items-center flex-column' style={{transition : "0.6s",width:"60%"}}>
+        <div className='d-flex gap-5 justify-content-start align-items-center flex-column' style={{transition : "0.6s",width:"50%"}}>
             {inputs("Your Email","email","","")}
            {inputs("Subject","text","","")}
            {inputs("Your Message","","150px","textarea")}
