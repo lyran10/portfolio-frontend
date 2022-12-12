@@ -29,7 +29,10 @@ export const Projects = ({projects} : props) => {
           <a target={"_blank"} href="https://timely-zabaione-7f2a07.netlify.app">
           <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>Demo</Button>
           </a>
-          <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+          <a target={"_blank"} href="https://github.com/lyran10/Weather-app/tree/main/weather-app-react">
+            <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+          </a>
+          
           </div>
         </Card.Body>
     </Card>
@@ -45,7 +48,10 @@ export const Projects = ({projects} : props) => {
         <a target={"_blank"} href="https://todo-app-g82h.onrender.com/">
         <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>Demo</Button>
         </a>
-          <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+        <a target={"_blank"} href="https://github.com/lyran10/to_do_app/tree/main/To-Do-App-react">
+        <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+        </a>
+          
           </div>
       </Card.Body>
     </Card>
@@ -61,7 +67,10 @@ export const Projects = ({projects} : props) => {
         <a target={"_blank"} href="https://crypto-frontend-wi77.onrender.com">
         <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>Demo</Button>
         </a>
+        <a target={"_blank"} href="https://github.com/lyran10/crypto">
         <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+        </a>
+        
           </div>
       </Card.Body>
     </Card>
