@@ -7,6 +7,7 @@ import {Experience} from "./components/experience/experience"
 import { Education } from './components/education/education';
 import { Projects } from './components/projects/projects';
 import { ContactMe } from './components/contactMe/contactMe';
+import { NavBar } from './components/navBar';
 
 function App() {
 const [aboutMe,setAboutMe] = useState<boolean>(false)
@@ -29,6 +30,7 @@ const [contact,setContact] = useState<boolean>(false)
 
   return (
     <div>
+      <NavBar/>
       <Home/>
       <AboutMe aboutMe={aboutMe}/>
       <MySkills mySkills={mySkills}/>

@@ -23,7 +23,7 @@ export const AboutMe = ({aboutMe} : props) => {
   },[widthSize])
   
   return (
-    <Container className='d-flex justify-content-center align-items-center p-5 m-0 p-0' style={aboutContainer}>
+    <Container id="aboutMe" className='d-flex justify-content-center align-items-center p-5 m-0 p-0' style={aboutContainer}>
       <div className='d-flex flex-column justify-content-center align-items-center gap-5'>
         <span className='h1' style={{color:"rgba(77,181,255,0.4)",opacity: aboutMe === false ? "0": "1",transition : "0.6s"}}>About Me</span>
 

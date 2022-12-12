@@ -23,7 +23,7 @@ const icons = (icon : JSX.Element,url : string) => {
 }
 
   return (
-    <Container className='d-flex justify-content-center gap-5 align-items-center flex-column' style={mainContainer}>
+    <Container id="home" className='d-flex justify-content-center gap-5 align-items-center flex-column' style={mainContainer}>
       <div className='d-flex flex-column gap-2 justify-content-center align-items-center'>
       <span className='text-white'>Hi, I am</span>
       <span className='fs-2 text-white'>Liran Ramekar</span>
