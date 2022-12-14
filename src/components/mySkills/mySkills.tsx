@@ -85,7 +85,7 @@ export const MySkills = ({mySkills} : props) => {
       </div>
     </div>
   </div>
-  <div className='d-flex gap-2 justify-content-center align-items-center'>
+  <div style={{zIndex : "100"}} className='d-flex gap-2 justify-content-center align-items-center'>
         <span>Experience Section</span>
         <a href="#experience">
         <AiFillDownCircle style={{color : "#4db5ff"}}/>

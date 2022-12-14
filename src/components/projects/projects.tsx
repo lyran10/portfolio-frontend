@@ -10,6 +10,11 @@ type props = {
 }
 
 export const Projects = ({projects} : props) => {
+
+  const buttonStyles : React.CSSProperties = {
+    backgroundColor:"#4db5ff",
+    color : "rgba(255,255,255,0.6)",
+  }
   return (
     <Container id="projects" className='d-flex justify-content-center align-items-center p-5'>
     <div style={{width : "100%"}} className='d-flex flex-column justify-content-center align-items-center gap-5'>
@@ -27,10 +32,10 @@ export const Projects = ({projects} : props) => {
         </Card.Text>
         <div className='d-flex gap-3 justify-content-center align-items-center'>
           <a target={"_blank"} href="https://timely-zabaione-7f2a07.netlify.app">
-          <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>Demo</Button>
+          <Button style={buttonStyles}>Demo</Button>
           </a>
           <a target={"_blank"} href="https://github.com/lyran10/Weather-app/tree/main/weather-app-react">
-            <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+            <Button style={buttonStyles}>GitHub</Button>
           </a>
           
           </div>
@@ -46,10 +51,10 @@ export const Projects = ({projects} : props) => {
         </Card.Text>
         <div className='d-flex gap-3 justify-content-center align-items-center'>
         <a target={"_blank"} href="https://todo-app-g82h.onrender.com/">
-        <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>Demo</Button>
+        <Button style={buttonStyles}>Demo</Button>
         </a>
         <a target={"_blank"} href="https://github.com/lyran10/to_do_app/tree/main/To-Do-App-react">
-        <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+        <Button style={buttonStyles}>GitHub</Button>
         </a>
           
           </div>
@@ -65,17 +70,17 @@ export const Projects = ({projects} : props) => {
         </Card.Text>
         <div className='d-flex gap-3 justify-content-center align-items-center'>
         <a target={"_blank"} href="https://crypto-frontend-wi77.onrender.com">
-        <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>Demo</Button>
+        <Button style={buttonStyles}>Demo</Button>
         </a>
         <a target={"_blank"} href="https://github.com/lyran10/crypto">
-        <Button style={{backgroundColor:"#4db5ff",color : "rgba(255,255,255,0.6)"}}>GitHub</Button>
+        <Button style={buttonStyles}>GitHub</Button>
         </a>
         
           </div>
       </Card.Body>
     </Card>
     </div>
-    <div className='d-flex gap-2 justify-content-center align-items-center'>
+    <div style={{zIndex : "100"}} className='d-flex gap-2 justify-content-center align-items-center'>
         <span>Contact Me</span>
         <a href="#contact">
         <AiFillDownCircle style={{color : "#4db5ff"}}/>

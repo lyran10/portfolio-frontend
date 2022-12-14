@@ -22,7 +22,7 @@ const [contact,setContact] = useState<boolean>(false)
       setAboutMe(window.pageYOffset < 300 ? false : true)
       setMySkills(window.pageYOffset < 800 ? false : true)
       setExperience(window.pageYOffset < 1300 ? false : true)
-      setEducation(window.pageYOffset < 2000 ? false : true)
+      setEducation(window.pageYOffset < 2300 ? false : true)
       setProjects(window.pageYOffset < 3000 ? false : true)
       setContact(window.pageYOffset < 3000 ? false : true)
     }

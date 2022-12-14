@@ -76,7 +76,7 @@ export const Experience = ({experience} : props) => {
                        
             </div>
           </div>
-          <div className='d-flex gap-2 justify-content-center align-items-center'>
+          <div style={{zIndex : "100"}} className='d-flex gap-2 justify-content-center align-items-center'>
         <span>Education Section</span>
         <a href="#education">
         <AiFillDownCircle style={{color : "#4db5ff"}}/>
