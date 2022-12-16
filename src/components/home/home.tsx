@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import { Container,Image,Button } from 'react-bootstrap'
 import { imageDiv,mainContainer,imagestyle } from './styling'
 import image from "../home/liran.jpg"
@@ -8,11 +8,19 @@ import PDF from "./Liran_CV.pdf"
 export const Home = () => {
 const [rotate,setRotate] = useState<string>("10deg")
 const [scale,setScale] = useState<string>("1")
+const [show,setShow] = useState<boolean>(false)
+const [opacity,setOpacity] = useState<string>("0")
 
 const animation = (deg :string,scale :string) => {
   setRotate(deg)
   setScale(scale)
 }
+
+useEffect(() => {
+  setTimeout(() => {
+    setOpacity("1")
+},200)
+},[])
 
 const icons = (icon : JSX.Element,url : string) => {
   return (
@@ -23,7 +31,7 @@ const icons = (icon : JSX.Element,url : string) => {
 }
 
   return (
-    <Container id="home" className='d-flex justify-content-center gap-5 align-items-center flex-column' style={mainContainer}>
+    <Container id="home" className='d-flex justify-content-center gap-5 align-items-center flex-column' style={mainContainer(opacity)}>
       <div className='d-flex flex-column gap-2 justify-content-center align-items-center'>
       <span className='text-white'>Hi, I am</span>
       <span className='fs-2 text-white'>Liran Ramekar</span>

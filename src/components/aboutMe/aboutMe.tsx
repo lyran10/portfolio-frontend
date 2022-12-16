@@ -54,7 +54,6 @@ export const AboutMe = ({aboutMe} : props) => {
         </a>
       </div>
       </div>
-      
       </Container>
   )
 }

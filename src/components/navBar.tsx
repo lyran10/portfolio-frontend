@@ -11,18 +11,19 @@ import {MdArrowBackIosNew,MdArrowForwardIos} from "react-icons/md"
 export const NavBar = () => {
   const [boolean,setBoolean] = useState<boolean>(false)
   const [moveIn,setMoveIn] = useState<string>("25")
-  const [instruction,setInstruction] = useState<boolean>(true)
   const [width,setWidth] = useState<string>("60px")
+  const [rotate,setRotate] = useState<string>("0")
+  const [opacity,setOpacity] = useState<string>("1")
 
   useEffect(() => {
     setBoolean(window.pageYOffset > 500 ? false : true)
     
   }, [boolean])
 
- const handleArrow = (num : string) => {
-      setMoveIn(num)
-      setInstruction(false)
-      setWidth("0px")
+ const handleArrow = () => {
+      moveIn === "25" ? setMoveIn("100") : setMoveIn("25")
+      rotate === "180" ? setRotate("0") : setRotate("180")
+        setOpacity("0")
   }
   
   return (
@@ -51,17 +52,11 @@ export const NavBar = () => {
         </Nav.Item>
       </Nav>
       <Nav>
-        {moveIn === "25" ? 
-        <MdArrowForwardIos style={{cursor : "pointer",transition : "0.6s"}} onClick={() => handleArrow("100")} size={20}/>
-        :
-            <MdArrowBackIosNew style={{cursor : "pointer",transition : "0.6s"}} onClick={() => handleArrow("25")} size={20}/>
-  }
+        <MdArrowForwardIos style={{cursor : "pointer",transition : "0.6s",transform : `rotate(${rotate}deg)`}} onClick={() => handleArrow()} size={20}/>
       </Nav>
-      {instruction ? 
-      <div style={{backgroundColor : "black",padding : "10px",borderRadius : "10px"}} >
+      <div style={{backgroundColor : "black",padding : "10px",borderRadius : "10px",transition : "0.6s",opacity : opacity}} >
           <span>Menu here</span>
       </div>
- : null}
     </Container>
   )
 }

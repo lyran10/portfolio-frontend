@@ -1,8 +1,12 @@
 import React from "react"
 
-export const mainContainer : React.CSSProperties = {
-  height:"100vh",
+export const mainContainer = (opacity : string) => {
+ const style : React.CSSProperties = { height:"100vh",
   width:"100vw",
+  opacity : opacity,
+  transition : "0.3s"
+}
+return style
 }
 
 export const imageDiv = (index : string, rotate : string,scale : string) =>  {
